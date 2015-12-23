@@ -1,0 +1,4 @@
+title: "Mary Schmidt"
+url: "http://maryschmidt.github.io"
+markdown: kramdown
+permalink: /:title.html
