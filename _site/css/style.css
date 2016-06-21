@@ -120,11 +120,50 @@ h1, h2 {
   font-weight: 200;
 }
 
-h1.title {
+#nav {
   max-width: 1200px;
+  padding: 20px 20px;
+  margin: 0 auto;
+}
+
+.title {
+  display: inline-block;
+  font-size: 1.2em;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 32px;
+  margin-top: 0;
+  margin-bottom: 0;
   margin-left: auto;
   margin-right: auto;
-  text-align: center;
+  position: relative;
+  text-align: left;
+}
+
+.title a {
+  text-decoration: none;
+  color: #28142d;
+  vertical-align: top;
+}
+
+.title a img {
+  margin-right: 4px;
+}
+
+.links {
+  float: right;
+}
+
+.links a {
+  color: #28142d;
+  font-size: 0.85em;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+  margin-left: 20px;
+  margin-right: auto;
+  text-align: right;
+  text-decoration: none;
 }
 
 h2.project {
@@ -253,15 +292,13 @@ p img {
 
 #landing {
   -webkit-transition: all 0.5s linear;
-  min-height: 100%;
+  min-height: 500px;
   position: relative;
   text-align: left;
   transition: all 0.5s linear;
   vertical-align: top;
   zoom: 1;
-  height: 100%;
   width: 100%;
-  display: table;
   position: relative;
   overflow: hidden;
   /* background-image: url('/img/background.png'); */
@@ -272,9 +309,8 @@ p img {
 }
 
 #landing-container {
-  display: table-cell;
-  vertical-align: middle;
   text-align: center;
+  margin: 4em auto;
 }
 
 #landing-content {
@@ -286,14 +322,14 @@ p img {
 }
 
 .landing-message-1 {
-  font-size: 2.5em;
+  font-size: 2.0em;
   letter-spacing: 0.05em;
   line-height: 2em;
 }
 
 .landing-message-2 {
-  font-size: 1.5em;
-  letter-spacing: 0.025em;
+  font-size: 1.15em;
+  letter-spacing: 0.015em;
   line-height: 1em;
 }
 
@@ -305,20 +341,22 @@ p img {
 }
 
 .trigger {
-  background: #f3f3f3;
-  border: 2px solid #e6e6e6;
+  -webkit-background-image: linear-gradient(160deg, #d40000, #bb0000);
+  background-image: linear-gradient(160deg, #d40000, #bb0000);
+  border: 2px solid #bb0000;
+  border-radius: 3px;
+  color: #ffffff;
   cursor: pointer;
   display: inline-block;
   font-weight: 600;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.05em;
   padding: 0.75em;
-  text-transform: uppercase;
   width: 10em;
 }
 
 .trigger:hover {
-  -webkit-background-image: linear-gradient(160deg, #f3f3f3, #e6e6e6);
-  background-image: linear-gradient(160deg, #f3f3f3, #e6e6e6);
+  -webkit-background-image: linear-gradient(160deg, #d40000, #a10000);
+  background-image: linear-gradient(160deg, #d40000, #a10000);
 }
 
 #featured-projects {
