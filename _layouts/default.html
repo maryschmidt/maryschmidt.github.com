@@ -21,8 +21,8 @@
   </div>
 
   <div class="links">
-    <a href="#">Link 1</a>
-    <a href="#">Link 2</a>
+    <a href="#">Projects</a>
+    <a href="#">Contact</a>
   </div>
 </div>
 
@@ -41,86 +41,83 @@
   </div>
 </div>
 
-      <div class="main-container">
-        <div class="header" style="display: none;">
-          <h1 class="title"><a href="/">Mary Schmidt</a></h1>
+<div class="page-content">
+  <div class="wrapper">
+    <div class="segment">
+      <div class="half">
+        <div class="image" style="background-image:url('/img/bitlancer-montage.png')"></div>
+      </div>
+      <div class="half info">
+        <div class="title">Bitlancer</div>
+        <div class="description">Marketing site and blog redesign on a tight timeline</div>
+        <ul class="tags">
+          <li class="tag">Visual Design</li>
+          <li class="tag">Prototyping</li>
+          <li class="tag">Jekyll</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="segment">
+      <div class="half" style="">
+        <div class="image" style="background-image:url('/img/ripples-4.png')"></div>
+      </div>
+      <div class="half info">
+        <div class="title">Ripples</div>
+        <div class="description">Winner of the 2nd Riot Games API Challenge</div>
+        <ul class="tags">
+          <li class="tag">Rails</li>
+          <li class="tag">JavaScript</li>
+          <li class="tag">D3.js</li>
+          <li class="tag">Branding</li>
+          <li class="tag">Visual Design</li>
+          <li class="tag">Data Visualization</li>
         </div>
-
-        <div class="filter-projects">
-          <div class="filter">
-            <ul class="nav">
-              <li data-category="recent" class="active">Recent</li>
-              <li data-category="web-development">Web Development</li>
-              <li data-category="ui-ux">UI/UX</li>
-              <li data-category="prototyping">Prototyping</li>
-              <li data-category="graphics">Graphics</li>
-              <li data-category="etc">etc</li>
-            </ul>
-          </div>
-
-          <div id="main">
-            {{ content }}
-          </div>
-        </div>
-
-        <section id="footer">
-        Copyright 2015 Mary Schmidt
-        </section>
       </div>
 
+      <div class="segment">
+        <div class="half" style="">
+          <div class="image" style="background-image:url('/img/mobile.jpg')"></div>
+        </div>
+        <div class="half info">
+          <div class="title">Mobile Web App</div>
+          <div class="description">Created a new mobile experience for Wistia</div>
+          <ul class="tags">
+            <li class="tag">Rails</li>
+            <li class="tag">JavaScript</li>
+            <li class="tag">Backbone.js</li>
+          </div>
+        </div>
+      </div>
 
-      <script>
-        $('document').ready(function() {
+    </div>
 
+    <div class="red banner">
+      <h1>Let's talk!</h1>
+      <form id="contact">
+        <div class="row">
+          <label for="name" id="name">What's your name?</label>
+          <input type="text" name="name" class="text">
+        </div>
+        <div class="row">
+          <label for="email" id="email">What's your email address?</label>
+          <input type="text" name="email" class="text">
+        </div>
+        <div class="row">
+          <label for="project" id="project">Tell me a little about your project.</label>
+          <textarea name="project"></textarea>
+        </div>
+        <div class="row">
+          <input type="submit" name="commit" value="Submit" class="button submit">
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
 
-          $('#featured-projects').children().filter(function() {
-            return $(this).data('category').match(/recent/);
-          }).css('display', 'inline-block');
+<section id="footer">
+  Copyright 2016 Mary Schmidt
+</section>
 
-
-          $('.container.featured').on('mouseenter', function(e) {
-            target = e.currentTarget;
-            color = target.dataset.color || '#8d4aa0';
-            $titleDiv = $(target).children('.feature-project').children().children().first();
-
-            $titleDiv.css('color', color);
-            return $(target).css('border-top', "2px solid " + color);
-          });
-
-
-          $('.container.featured').on('mouseleave', function(e) {
-            target = e.currentTarget;
-            $titleDiv = $(target).children('.feature-project').children().children().first();
-
-            $titleDiv.css('color', '#28142d');
-            return $(target).css('border-top', '2px solid #e8e6e8');
-          });
-
-
-          $('ul.nav li').on('click', function(e) {
-            $elem = $(e.target);
-            category = e.target.dataset.category;
-
-            // change classes on li's
-            $('ul.nav li').removeClass('active');
-            $elem.addClass('active');
-
-            // show projects matching filter
-            $('#featured-projects').children().filter(function() {
-              return $(this).data('category').match(category);
-            }).css('display', 'inline-block');
-
-            // and hide projects not matching filter
-            $('#featured-projects').children().filter(function() {
-              return !$(this).data('category').match(category);
-            }).hide();
-
-
-          });
-
-
-        });
-      </script>
-
-    </body>
+</body>
 </html>

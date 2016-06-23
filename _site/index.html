@@ -21,8 +21,8 @@
   </div>
 
   <div class="links">
-    <a href="#">Link 1</a>
-    <a href="#">Link 2</a>
+    <a href="#">Projects</a>
+    <a href="#">Contact</a>
   </div>
 </div>
 
@@ -41,316 +41,83 @@
   </div>
 </div>
 
-      <div class="main-container">
-        <div class="header" style="display: none;">
-          <h1 class="title"><a href="/">Mary Schmidt</a></h1>
-        </div>
+<div class="page-content">
+  <div class="wrapper">
+    <div class="segment">
+      <div class="half">
+        <div class="image" style="background-image:url('/img/bitlancer-montage.png')"></div>
+      </div>
+      <div class="half info">
+        <div class="title">Bitlancer</div>
+        <div class="description">Marketing site and blog redesign on a tight timeline</div>
+        <ul class="tags">
+          <li class="tag">Visual Design</li>
+          <li class="tag">Prototyping</li>
+          <li class="tag">Jekyll</li>
+        </ul>
+      </div>
+    </div>
 
-        <div class="filter-projects">
-          <div class="filter">
-            <ul class="nav">
-              <li data-category="recent" class="active">Recent</li>
-              <li data-category="web-development">Web Development</li>
-              <li data-category="ui-ux">UI/UX</li>
-              <li data-category="prototyping">Prototyping</li>
-              <li data-category="graphics">Graphics</li>
-              <li data-category="etc">etc</li>
-            </ul>
+    <div class="segment">
+      <div class="half" style="">
+        <div class="image" style="background-image:url('/img/ripples-4.png')"></div>
+      </div>
+      <div class="half info">
+        <div class="title">Ripples</div>
+        <div class="description">Winner of the 2nd Riot Games API Challenge</div>
+        <ul class="tags">
+          <li class="tag">Rails</li>
+          <li class="tag">JavaScript</li>
+          <li class="tag">D3.js</li>
+          <li class="tag">Branding</li>
+          <li class="tag">Visual Design</li>
+          <li class="tag">Data Visualization</li>
+        </div>
+      </div>
+
+      <div class="segment">
+        <div class="half" style="">
+          <div class="image" style="background-image:url('/img/mobile.jpg')"></div>
+        </div>
+        <div class="half info">
+          <div class="title">Mobile Web App</div>
+          <div class="description">Created a new mobile experience for Wistia</div>
+          <ul class="tags">
+            <li class="tag">Rails</li>
+            <li class="tag">JavaScript</li>
+            <li class="tag">Backbone.js</li>
           </div>
-
-          <div id="main">
-            <div id="featured-projects">
-
-  
-
-  <div class="container featured" data-category="recent web-developmentgraphicsetc" data-color="#b73cfc">
-    <div class="feature-project" onclick="window.location.href='/ripples.html';">
-      <div class="feature-image" style="background-image: url('/img/ripples.png')">
-      </div>
-      <div class="feature-desc">
-        <div class="feature-title">Ripples</div>
-        <div class="feature-summary">
-          First place winner of the Riot Games API Challenge
         </div>
       </div>
+
     </div>
-  </div>
 
-  
-
-  <div class="container featured" data-category="recent web-developmentgraphics" data-color="#2695ff">
-    <div class="feature-project" onclick="window.location.href='/bitlancer.html';">
-      <div class="feature-image" style="background-image: url('/img/bitlancer-montage.png')">
-      </div>
-      <div class="feature-desc">
-        <div class="feature-title">Bitlancer</div>
-        <div class="feature-summary">
-          Designed and built a new marketing site for a local consultancy
+    <div class="red banner">
+      <h1>Let's talk!</h1>
+      <form id="contact">
+        <div class="row">
+          <label for="name" id="name">What's your name?</label>
+          <input type="text" name="name" class="text">
         </div>
-      </div>
-    </div>
-  </div>
-
-  
-
-  <div class="container featured" data-category="recent graphics" data-color="#de073e">
-    <div class="feature-project" onclick="window.location.href='/gg-art.html';">
-      <div class="feature-image" style="background-image: url('/img/gg-bird.png')">
-      </div>
-      <div class="feature-desc">
-        <div class="feature-title">God's Gables</div>
-        <div class="feature-summary">
-          Graphics for a religious startup
+        <div class="row">
+          <label for="email" id="email">What's your email address?</label>
+          <input type="text" name="email" class="text">
         </div>
-      </div>
-    </div>
-  </div>
-
-  
-
-  <div class="container featured" data-category="recent ui-ux" data-color="#ff7100">
-    <div class="feature-project" onclick="window.location.href='/gg.html';">
-      <div class="feature-image" style="background-image: url('/img/gg-mockup.png')">
-      </div>
-      <div class="feature-desc">
-        <div class="feature-title">Bridging the Gap</div>
-        <div class="feature-summary">
-          Designed an interface to make prayers at home in the Web
+        <div class="row">
+          <label for="project" id="project">Tell me a little about your project.</label>
+          <textarea name="project"></textarea>
         </div>
-      </div>
-    </div>
-  </div>
-
-  
-
-  <div class="container featured" data-category="recent web-development" data-color="#F24659">
-    <div class="feature-project" onclick="window.location.href='/recipebox.html';">
-      <div class="feature-image" style="background-image: url('/img/recipebox.png')">
-      </div>
-      <div class="feature-desc">
-        <div class="feature-title">Recipe Box</div>
-        <div class="feature-summary">
-          Angular + Rails sandbox
+        <div class="row">
+          <input type="submit" name="commit" value="Submit" class="button submit">
         </div>
-      </div>
+      </form>
     </div>
   </div>
-
-  
-
-  <div class="container featured" data-category="recent web-development" data-color="#53bbff">
-    <div class="feature-project" onclick="window.location.href='/mobile.html';">
-      <div class="feature-image" style="background-image: url('/img/mobile.jpg')">
-      </div>
-      <div class="feature-desc">
-        <div class="feature-title">Mobile Web App</div>
-        <div class="feature-summary">
-          Created a new mobile experience for Wistia
-        </div>
-      </div>
-    </div>
-  </div>
-
-  
-
-  <div class="container featured" data-category="recent graphics" data-color="#DE87AA">
-    <div class="feature-project" onclick="window.location.href='/annie.html';">
-      <div class="feature-image" style="background-image: url('/img/annie.png')">
-      </div>
-      <div class="feature-desc">
-        <div class="feature-title">Annie</div>
-        <div class="feature-summary">
-          Illustration of my little sister
-        </div>
-      </div>
-    </div>
-  </div>
-
-  
-
-  <div class="container featured" data-category="recent graphics" data-color="#d40000">
-    <div class="feature-project" onclick="window.location.href='/poppy.html';">
-      <div class="feature-image" style="background-image: url('/img/poppy.png')">
-      </div>
-      <div class="feature-desc">
-        <div class="feature-title">Poppy</div>
-        <div class="feature-summary">
-          
-        </div>
-      </div>
-    </div>
-  </div>
-
-  
-
-  <div class="container featured" data-category="recent web-development" data-color="#53bbff">
-    <div class="feature-project" onclick="window.location.href='/blog.html';">
-      <div class="feature-image" style="background-image: url('/img/blog.png')">
-      </div>
-      <div class="feature-desc">
-        <div class="feature-title">In-house Blog</div>
-        <div class="feature-summary">
-          Built a blog using Ruby on Rails and Elasticsearch
-        </div>
-      </div>
-    </div>
-  </div>
-
-  
-
-  <div class="container featured" data-category="recent engineering" data-color="">
-    <div class="feature-project" onclick="window.location.href='/maker.html';">
-      <div class="feature-image" style="background-image: url('/img/maker.png')">
-      </div>
-      <div class="feature-desc">
-        <div class="feature-title">Maker</div>
-        <div class="feature-summary">
-          
-        </div>
-      </div>
-    </div>
-  </div>
-
-  
-
-  <div class="container featured" data-category="recent graphics" data-color="#051A56">
-    <div class="feature-project" onclick="window.location.href='/hypnos.html';">
-      <div class="feature-image" style="background-image: url('/img/hypnos.png')">
-      </div>
-      <div class="feature-desc">
-        <div class="feature-title">Hypnos</div>
-        <div class="feature-summary">
-          Icon for a sleep startup
-        </div>
-      </div>
-    </div>
-  </div>
-
-  
-
-  <div class="container featured" data-category="recent prototyping" data-color="#4673A7">
-    <div class="feature-project" onclick="window.location.href='/fish.html';">
-      <div class="feature-image" style="background-image: url('/img/fish.png')">
-      </div>
-      <div class="feature-desc">
-        <div class="feature-title">Unkle Dunkin</div>
-        <div class="feature-summary">
-          3D printed dunkleosteus
-        </div>
-      </div>
-    </div>
-  </div>
-
-  
-
-  <div class="container featured" data-category="recent prototyping" data-color="#242424">
-    <div class="feature-project" onclick="window.location.href='/uav.html';">
-      <div class="feature-image" style="background-image: url('/img/uav.png')">
-      </div>
-      <div class="feature-desc">
-        <div class="feature-title">Propulsion system redesign</div>
-        <div class="feature-summary">
-          Redesigned the thruster system for a commercial submersible vehicle
-        </div>
-      </div>
-    </div>
-  </div>
-
-  
-
-  <div class="container featured" data-category="recent prototyping" data-color="#068FDF">
-    <div class="feature-project" onclick="window.location.href='/anglerfish.html';">
-      <div class="feature-image" style="background-image: url('/img/anglerfish.jpg')">
-      </div>
-      <div class="feature-desc">
-        <div class="feature-title">Anglerfish</div>
-        <div class="feature-summary">
-          Named "Fish god awesome" by the legendary Dave Barrett.
-        </div>
-      </div>
-    </div>
-  </div>
-
-  
-
-  <div class="container featured" data-category="recent etc" data-color="#C66B1C">
-    <div class="feature-project" onclick="window.location.href='/banquette.html';">
-      <div class="feature-image" style="background-image: url('/img/banquette.jpg')">
-      </div>
-      <div class="feature-desc">
-        <div class="feature-title">Banquette</div>
-        <div class="feature-summary">
-          Mary's adventures in furniture design, part 1
-        </div>
-      </div>
-    </div>
-  </div>
-
-  
-
 </div>
 
-          </div>
-        </div>
+<section id="footer">
+  Copyright 2016 Mary Schmidt
+</section>
 
-        <section id="footer">
-        Copyright 2015 Mary Schmidt
-        </section>
-      </div>
-
-
-      <script>
-        $('document').ready(function() {
-
-
-          $('#featured-projects').children().filter(function() {
-            return $(this).data('category').match(/recent/);
-          }).css('display', 'inline-block');
-
-
-          $('.container.featured').on('mouseenter', function(e) {
-            target = e.currentTarget;
-            color = target.dataset.color || '#8d4aa0';
-            $titleDiv = $(target).children('.feature-project').children().children().first();
-
-            $titleDiv.css('color', color);
-            return $(target).css('border-top', "2px solid " + color);
-          });
-
-
-          $('.container.featured').on('mouseleave', function(e) {
-            target = e.currentTarget;
-            $titleDiv = $(target).children('.feature-project').children().children().first();
-
-            $titleDiv.css('color', '#28142d');
-            return $(target).css('border-top', '2px solid #e8e6e8');
-          });
-
-
-          $('ul.nav li').on('click', function(e) {
-            $elem = $(e.target);
-            category = e.target.dataset.category;
-
-            // change classes on li's
-            $('ul.nav li').removeClass('active');
-            $elem.addClass('active');
-
-            // show projects matching filter
-            $('#featured-projects').children().filter(function() {
-              return $(this).data('category').match(category);
-            }).css('display', 'inline-block');
-
-            // and hide projects not matching filter
-            $('#featured-projects').children().filter(function() {
-              return !$(this).data('category').match(category);
-            }).hide();
-
-
-          });
-
-
-        });
-      </script>
-
-    </body>
+</body>
 </html>
