@@ -2,25 +2,3 @@
 layout: default
 title: Mary Schmidt
 ---
-
-
-<div id="featured-projects">
-
-  {% for post in site.posts %}
-
-  <div class="container featured" data-category="recent {{ post.categories }}" data-color="{{ post.color }}">
-    <div class="feature-project" onclick="window.location.href='{{ post.url }}';">
-      <div class="feature-image" style="background-image: url('{{ post.image }}')">
-      </div>
-      <div class="feature-desc">
-        <div class="feature-title">{{ post.title }}</div>
-        <div class="feature-summary">
-          {{ post.description }}
-        </div>
-      </div>
-    </div>
-  </div>
-
-  {% endfor %}
-
-</div>

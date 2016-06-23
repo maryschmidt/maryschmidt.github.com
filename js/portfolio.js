@@ -18,7 +18,7 @@ $(document).ready(function() {
   });
 
   $('.trigger').click(function() {
-    scrollVal = $('#featured-projects').offset().top - 136;
+    scrollVal = $('#contact').offset().top - 36;
 
     $('html, body').animate({scrollTop: scrollVal}, 'fast');
   });

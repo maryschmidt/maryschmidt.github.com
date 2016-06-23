@@ -291,7 +291,7 @@ p img {
   background-color: #FEFDFE;
   margin: 0 auto;
   max-width: 1100px;
-  padding: 20px 0;
+  padding: 0 0 20px 0;
 }
 
 hr {
@@ -309,11 +309,11 @@ hr {
   padding-bottom: 120px;
 }
 
-form#contact {
+form#contact-form {
   margin-top: 3em;
 }
 
-form#contact .row {
+form#contact-form .row {
   position: relative;
   margin: 15px auto 0 auto;
   padding: 0;
@@ -321,7 +321,7 @@ form#contact .row {
   max-width: 90%;
 }
 
-form#contact label {
+form#contact-form label {
   color: #28142d;
   display: block;
   font-size: 16px;
@@ -333,7 +333,7 @@ form#contact label {
   z-index: 1;
 }
 
-form#contact input {
+form#contact-form input {
   -webkit-appearance: none;
   background: #fff;
   border-radius: 3px;
@@ -351,7 +351,7 @@ form#contact input {
   background-repeat: repeat;
 }
 
-form#contact textarea {
+form#contact-form textarea {
   -webkit-appearance: none;
   background: #fff;
   border-radius: 3px;
@@ -370,7 +370,7 @@ form#contact textarea {
   background-repeat: repeat;
 }
 
-form#contact input.button.submit {
+form#contact-form input.button.submit {
   cursor: pointer;
   width: 100%;
   background-image: url('/img/rule.png');
@@ -403,6 +403,7 @@ form#contact input.button.submit {
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 6px;
+  display: inline-block;
   width: 100%;
   /* max-width: 500px; */
   height: 300px;

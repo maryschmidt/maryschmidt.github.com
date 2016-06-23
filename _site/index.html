@@ -21,8 +21,8 @@
   </div>
 
   <div class="links">
-    <a href="#">Projects</a>
-    <a href="#">Contact</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
   </div>
 </div>
 
@@ -42,10 +42,10 @@
 </div>
 
 <div class="page-content">
-  <div class="wrapper">
+  <div id="projects" class="wrapper">
     <div class="segment">
       <div class="half">
-        <div class="image" style="background-image:url('/img/bitlancer-montage.png')"></div>
+        <a class="image" href="http://www.bitlancer.com/" target="_blank" style="background-image:url('/img/bitlancer-montage.png')"></a>
       </div>
       <div class="half info">
         <div class="title">Bitlancer</div>
@@ -60,7 +60,7 @@
 
     <div class="segment">
       <div class="half" style="">
-        <div class="image" style="background-image:url('/img/ripples-4.png')"></div>
+        <a class="image" href="http://claygimenez.com/ripples/" target="_blank" style="background-image:url('/img/ripples-4.png')"></a>
       </div>
       <div class="half info">
         <div class="title">Ripples</div>
@@ -77,7 +77,7 @@
 
       <div class="segment">
         <div class="half" style="">
-          <div class="image" style="background-image:url('/img/mobile.jpg')"></div>
+          <a class="image" href="https://wistia.com/" target="_blank" style="background-image:url('/img/mobile.jpg')"></a>
         </div>
         <div class="half info">
           <div class="title">Mobile Web App</div>
@@ -86,15 +86,16 @@
             <li class="tag">Rails</li>
             <li class="tag">JavaScript</li>
             <li class="tag">Backbone.js</li>
+            <li class="tag">UX Engineering</li>
           </div>
         </div>
       </div>
 
     </div>
 
-    <div class="red banner">
+    <div id="contact" class="red banner">
       <h1>Let's talk!</h1>
-      <form id="contact">
+      <form id="contact-form">
         <div class="row">
           <label for="name" id="name">What's your name?</label>
           <input type="text" name="name" class="text">
