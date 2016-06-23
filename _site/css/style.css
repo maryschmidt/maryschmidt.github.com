@@ -428,6 +428,28 @@ form#contact-form input.button.submit {
   margin-bottom: 0.5em;
 }
 
+.segment .info .description {
+  line-height: 1.85em;
+  margin-bottom: 1em;
+}
+
+@media screen and (max-width: 775px){
+  .half {
+    display: block;
+    width: calc(100% - 43px);
+  }
+
+  .half:nth-child(2) {
+    width: calc(100% - 43px);
+    margin-top: 10px;
+    padding: 0;
+  }
+
+  .segment .info {
+    padding: 0;
+  }
+}
+
 .main-container {
   background-color: #f5f3f5;
   margin: 0 auto;
